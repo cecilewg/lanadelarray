@@ -1,9 +1,3 @@
-// function swapIndex (array, fromIndex, toIndex) {
-//   let firstElement = array[fromIndex]
-//   array[fromIndex] = array[toIndex]
-//   array[toIndex] = firstElement
-// }
-
 function sortByInsertion (array) {
   let j = 0
   for (let i = 1; i < array.length; i++) {
