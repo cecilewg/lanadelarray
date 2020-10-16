@@ -5,20 +5,15 @@
 // }
 
 function sortByInsertion (array) {
-  let swapWasDone = false
   let j = 0
   for (let i = 1; i < array.length; i++) {
     j = i
     while (array[j] < array[j - 1] && j > 0) {
-      swapWasDone = true
       let element = array[j]
       array[j] = array[j - 1]
       array[j - 1] = element
       j--
     }
-  }
-  if (swapWasDone === true) {
-    sortByInsertion(array)
   }
   return array
 }

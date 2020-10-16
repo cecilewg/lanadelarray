@@ -19,10 +19,9 @@ function bubbleSorting (arr) {
   if (swappedWasDone === true) {
     bubbleSorting(arr)
   }
-  // continuer à boucler si la condition est toujours bonne
   // the pass through the list is repeated until no swaps are needed
   return arr
 }
 
-let firstRes = bubbleSorting([5, 1, 4, 2, 8])
+let firstRes = bubbleSorting([5, 1, 4, 2, 8, 3])
 console.log(firstRes)
